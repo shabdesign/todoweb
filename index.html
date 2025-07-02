@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<header class="page-header">
+    <h1>Welcome to My Page!</h1>
+    <p> Your daily playlist and task list, in one place. </p>
+</header>
+
+<body>
+    <div class="main-container">
+        <div class="backsong">
+             <h2>🎧 Treasure - Slowmotion</h2>
+             <audio controls>
+                <source src="slowmotion.mp3" type="audio/mp3" />
+            </audio>
+            <p>A big jump towards the front.</p>
+            <p>Look at this, you can trust me.</p>
+            <p>Slower, more slower, slower.</p>
+            <p>We gon' make it.</p>
+            <p>We gon' reach it. </p>
+        </div>
+
+        <div class="todo-wrapper">
+            <h2>📋 My To Do List</h2>
+            <p class="intro-text">Let's be productive today!</p>
+            <form name="todo-adder">
+                <input type="text" id="todo-entry-box"/>
+                <button id="add-button" class="pretty-button">Add</button>
+            </form>
+            <p class="hint-text">Double click the item to make it complete</p>
+            <br/>
+            <ol id="todo-list"></ol>
+            <div id="control-wrapper">
+                <button id="clear-completed-button" onclick="ClearCopletedToDoItems()" class=""pretty-button">Clear Completed</button>
+                <button id="empty-button" onclick="emptyList()" class="pretty-button">Empty List</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

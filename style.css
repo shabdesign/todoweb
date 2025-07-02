@@ -1,0 +1,128 @@
+.page-header {
+  text-align: center;
+  padding: 30px 10px 10px;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgb(240, 239, 231);
+  color: #333;
+}
+
+.page-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: rgb(56, 76, 105);
+}
+
+.page-header p {
+  font-size: 16px;
+  color: #666;
+}
+
+body {
+    background-color: rgb(98, 120, 153);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif
+}
+
+.main-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin: auto;
+  align-items: flex-start;
+}
+
+.todo-wrapper {
+    flex: 3;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: rgb(236, 234, 221);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.todo-wrapper h2 {
+    margin: 0;
+}
+
+.todo-wrapper.intro-text {
+    font-size: medium;
+    color: rgb(42, 56, 80);
+}
+.todo-wrapper .hint-text {
+    font-style: italic;
+    font-size: small;
+    color: rgb(63, 81, 109);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.todo-wrapper ol {
+    margin: 20px 0;
+}
+
+.todo-wrapper.pretty-button {
+    color: rgb(63, 81, 109);
+    background-color: rgb(214, 225, 235);
+}
+
+.todo-wrapper.pretty-button:hover {
+    opacity: 0,7 ;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#control-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input, button {
+    border-radius: 16px;
+    border-width: 2px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.backsong {
+    flex:1;
+    border-radius: 15px;
+    margin-bottom: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: rgb(214, 225, 235);
+    opacity: 0.8;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.backsong h2 {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: larger;
+}
+.backsong audio {
+    margin-bottom: 15px;
+}
+.backsong p {
+    font-style: italic;
+    margin: 5px;
+    color: rgb(63, 81, 109);
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .backsong, .todo-wrapper {
+    width: 100%;
+  }
+}
