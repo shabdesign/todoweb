@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (newItemText !== "") {
       const li = document.createElement("li");
       li.textContent = newItemText;
+      li.addEventListener("dblclick", function () {
+        li.classList.toggle("completed");
+      });
       list.appendChild(li);
       input.value = "";
     }
