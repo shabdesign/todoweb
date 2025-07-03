@@ -16,6 +16,20 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       list.appendChild(li);
       input.value = "";
+    const clearCompletedBtn = document.getElementById("clear-completed");
+    clearCompletedBtn.addEventListener("click", function () {
+      const completedItems = document.querySelectorAll("#todo-list .completed");
+      completedItems.forEach(function (item) {
+        item.remove();
+      });
+    });
+    const emptyListBtn = document.getElementById("empty-list");
+    emptyListBtn.addEventListener("click", function () {
+      const allItems = document.querySelectorAll("#todo-list li");
+      allItems.forEach(function (item) {
+        item.remove();
+      });
+    });
     }
   });
 });
