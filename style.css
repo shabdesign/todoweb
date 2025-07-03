@@ -75,7 +75,6 @@ body {
 
 .completed {
   text-decoration: line-through;
-  color: rgb(214, 225, 235);
   opacity: 0.6;
 }
 
