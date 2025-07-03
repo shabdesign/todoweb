@@ -73,6 +73,12 @@ body {
     cursor: pointer;
 }
 
+.completed {
+  text-decoration: line-through;
+  color: rgb(214, 225, 235);
+  opacity: 0.6;
+}
+
 #control-wrapper {
     display: flex;
     flex-wrap: wrap;
