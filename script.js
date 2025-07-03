@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (newItemText !== "") {
       const li = document.createElement("li");
       li.textContent = newItemText;
+      console.log("item dibuat");
       li.addEventListener("dblclick", function () {
+        console.log("item diklik 2x");
         li.classList.toggle("completed");
       });
       list.appendChild(li);
