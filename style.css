@@ -60,12 +60,6 @@ body {
 
 .todo-wrapper ol {
     margin: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    padding: 5px 10px;
-    border-bottom: 1px solid rgb(214, 225, 235);
 }
 
 .todo-wrapper.pretty-button {
@@ -87,7 +81,7 @@ body {
 .delete-btn i {
   color: rgb(56, 76, 105);
   font-size: 16px;
-  margin-left: 20px;
+  margin-left: 200px;
 }
 
 .delete-btn:hover i {
