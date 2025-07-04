@@ -8,12 +8,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const newItemText = input.value.trim();
     if (newItemText !== "") {
       const li = document.createElement("li");
-      li.textContent = newItemText;
-      console.log("item dibuat");
+      const spanText = document.createElement("span");
+      spanText.textContent = newItemText;
+      const deleteBtn = document.createElement("button");
+      deleteBtn.textContent = "❌";
+      deleteBtn.classList.add("delete-btn");
+      deleteBtn.addEventListener("click", function () {
+        li.remove();
+      });
       li.addEventListener("dblclick", function () {
-        console.log("item diklik 2x");
         li.classList.toggle("completed");
       });
+      li.appendChild(spanText);
+      li.appendChild(deleteBtn);
       list.appendChild(li);
       input.value = "";
     const clearCompletedBtn = document.getElementById("clear-completed");
