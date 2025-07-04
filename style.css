@@ -95,6 +95,11 @@ body {
   cursor: pointer;
 }
 
+.delete-btn i {
+  color: rgb(56, 76, 105);
+  font-size: 14px;
+}
+
 .delete-btn:hover i {
   transform: scale(1.2);
 }
