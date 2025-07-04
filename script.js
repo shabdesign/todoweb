@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const newItemText = input.value.trim();
     if (newItemText !== "") {
       const li = document.createElement("li");
+      li.classList.add("todo-item");
       const spanText = document.createElement("span");
       spanText.textContent = newItemText;
       const deleteBtn = document.createElement("button");
