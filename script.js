@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const spanText = document.createElement("span");
       spanText.textContent = newItemText;
       const deleteBtn = document.createElement("button");
-      deleteBtn.textContent = "❌";
+      deleteBtn.innerHTML = '<i class="fas fa-trash"></i>';
       deleteBtn.classList.add("delete-btn");
       deleteBtn.addEventListener("click", function () {
         li.remove();
