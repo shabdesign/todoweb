@@ -89,8 +89,6 @@ body {
 
 .delete-btn {
   background: none;
-  border: 1.5px solid black;
-  border-radius: 10px;
   padding: 4px 6px;
   cursor: pointer;
 }
