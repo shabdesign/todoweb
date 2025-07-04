@@ -82,6 +82,7 @@ body {
 .delete-btn i {
   color: rgb(56, 76, 105);
   font-size: 16px;
+  margin-left: 20px;
 }
 
 .delete-btn:hover i {
