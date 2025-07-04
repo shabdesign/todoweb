@@ -87,7 +87,7 @@ body {
   gap: 12px;
 }
 
-.delete-btn i {
+.delete-btn {
   background: none;
   border: 1.5px solid black;
   border-radius: 10px;
