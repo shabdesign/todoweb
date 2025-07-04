@@ -60,6 +60,7 @@ body {
 
 .todo-wrapper ol {
     margin: 20px 0;
+    margin-right: 20px;
 }
 
 .todo-wrapper.pretty-button {
@@ -79,7 +80,7 @@ body {
 }
 
 .delete-btn i {
-  color: #c00;
+  color: rgb(56, 76, 105);
   font-size: 16px;
 }
 
