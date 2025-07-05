@@ -58,10 +58,6 @@ body {
     margin-bottom: 10px;
 }
 
-.todo-wrapper ol {
-    margin: 0;
-}
-
 .todo-wrapper.pretty-button {
     color: rgb(63, 81, 109);
     background-color: rgb(214, 225, 235);
