@@ -69,6 +69,11 @@ body {
     cursor: pointer;
 }
 
+.todo-wrapper ol {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
 .completed {
   text-decoration: line-through;
   opacity: 0.6;
