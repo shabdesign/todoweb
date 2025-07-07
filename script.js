@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
       items.push({
         text: span.textContent,
         completed: li.classList.contains("completed"),
-        deadline: li.querySelector("small")?.textContent.replace("Due: ", "") || ""
-        category: li.querySelector(".category")?.textContent.replace("#", "") || "";
+        deadline: li.querySelector("small")?.textContent.replace("Due: ", "") || "",
+        category: li.querySelector(".category")?.textContent.replace("#", "") || ""
       });
     });
     localStorage.setItem("todoList", JSON.stringify(items));
