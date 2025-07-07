@@ -13,12 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
         text: span.textContent,
         completed: li.classList.contains("completed"),
         deadline: li.querySelector("small")?.textContent.replace("Due: ", "") || ""
+        category: li.querySelector(".category")?.textContent.replace("#", "") || "";
       });
     });
     localStorage.setItem("todoList", JSON.stringify(items));
   }
 
-  function createListItem(text, completed = false, deadline = "") {
+  function createListItem(text, completed = false, deadline = "", category ="") {
     const li = document.createElement("li");
     li.classList.add("todo-item");
     if (completed) li.classList.add("completed");
@@ -26,6 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const dateLabel = document.createElement("small");
     dateLabel.textContent = deadline ? `Due: ${deadline}` : "";
     dateLabel.classList.add("deadline");
+
+     const categoryLabel = document.createElement("small");
+     categoryLabel.textContent = category ? `#${category}` : "";
+     categoryLabel.classList.add("category");
     
     const spanText = document.createElement("span");
     spanText.textContent = text;
@@ -46,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     li.appendChild(spanText);
     li.appendChild(dateLabel);
+    li.appendChild(categoryLabel);
     li.appendChild(deleteBtn);
 
     return li;
@@ -54,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function loadListFromLocalStorage() {
     const items = JSON.parse(localStorage.getItem("todoList")) || [];
     items.forEach(item => {
-      const li = createListItem(item.text, item.completed, item.deadline);
+      const li = createListItem(item.text, item.completed, item.deadline, item.category);
       list.appendChild(li);
     });
   }
@@ -64,8 +70,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const newItemText = input.value.trim();
     const dateInput = document.getElementById("todo-date");
     const deadline = dateInput.value;
+    const categoryInput = document.getElementById("todo-category");
+    const category = categoryInput.value;
     if (newItemText !== "") {
-      const li = createListItem(newItemText, false, deadline);
+      const li = createListItem(newItemText, false, deadline, category);
       list.appendChild(li);
       input.value = "";
       dateInput.value = ""; 
