@@ -15,6 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
     localStorage.setItem("todoList", JSON.stringify(items));
+    items.push({
+      text: span.textContent,
+      completed: li.classList.contains("completed"),
+      deadline: li.querySelector("small")?.textContent.replace("Due: ", "") || ""
+    });
   }
 
   function createListItem(text, completed = false) {
@@ -22,6 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
     li.classList.add("todo-item");
     if (completed) li.classList.add("completed");
 
+    const dateLabel = document.createElement("small");
+    dateLabel.textContent = deadline ? `Due: ${deadline}` : "";
+    dateLabel.classList.add("deadline");
+    
     const spanText = document.createElement("span");
     spanText.textContent = text;
 
@@ -40,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     li.appendChild(spanText);
+    li.appendChild(datelabel);
     li.appendChild(deleteBtn);
 
     return li;
@@ -51,11 +61,17 @@ document.addEventListener("DOMContentLoaded", function () {
       const li = createListItem(item.text, item.completed);
       list.appendChild(li);
     });
+    const dateLabel = document.createElement("small");
+      dateLabel.textContent = item.deadline ? `Due: ${item.deadline}` : "";
+      dateLabel.classList.add("deadline");
+      li.appendChild(dateLabel);
   }
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     const newItemText = input.value.trim();
+    const dateInput = document.getElementById("todo-date");
+    const deadline = dateInput.value;
     if (newItemText !== "") {
       const li = createListItem(newItemText);
       list.appendChild(li);
