@@ -51,10 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
      const categoryLabel = document.createElement("small");
      categoryLabel.textContent = category ? `#${category}` : "";
      categoryLabel.classList.add("category");
-    
-    const spanText = document.createElement("span");
-    spanText.textContent = text;
-
+  
     const deleteBtn = document.createElement("button");
     deleteBtn.innerHTML = '<i class="fas fa-trash"></i>';
     deleteBtn.classList.add("delete-btn");
