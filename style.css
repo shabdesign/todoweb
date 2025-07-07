@@ -148,6 +148,13 @@ select {
     font-size: 12px;
 }
 
+option {
+    border-radius: 16px;
+    border-width: 2px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
 form {
   display: flex;
   gap: 10px;
