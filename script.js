@@ -11,18 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
       const span = li.querySelector("span");
       items.push({
         text: span.textContent,
-        completed: li.classList.contains("completed")
+        completed: li.classList.contains("completed"),
+        deadline: li.querySelector("small")?.textContent.replace("Due: ", "") || ""
       });
     });
     localStorage.setItem("todoList", JSON.stringify(items));
-    items.push({
-      text: span.textContent,
-      completed: li.classList.contains("completed"),
-      deadline: li.querySelector("small")?.textContent.replace("Due: ", "") || ""
-    });
   }
 
-  function createListItem(text, completed = false) {
+  function createListItem(text, completed = false, deadline = "") {
     const li = document.createElement("li");
     li.classList.add("todo-item");
     if (completed) li.classList.add("completed");
@@ -58,13 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function loadListFromLocalStorage() {
     const items = JSON.parse(localStorage.getItem("todoList")) || [];
     items.forEach(item => {
-      const li = createListItem(item.text, item.completed);
+      const li = createListItem(item.text, item.completed, item.deadline);
       list.appendChild(li);
     });
-    const dateLabel = document.createElement("small");
-      dateLabel.textContent = item.deadline ? `Due: ${item.deadline}` : "";
-      dateLabel.classList.add("deadline");
-      li.appendChild(dateLabel);
   }
 
   form.addEventListener("submit", function (e) {
@@ -73,9 +65,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const dateInput = document.getElementById("todo-date");
     const deadline = dateInput.value;
     if (newItemText !== "") {
-      const li = createListItem(newItemText);
+      const li = createListItem(newItemText, false, deadline);
       list.appendChild(li);
       input.value = "";
+      dateInput.value = ""; 
       saveListToLocalStorage();
     }
   });
