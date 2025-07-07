@@ -88,6 +88,24 @@ body {
   gap: 12px;
 }
 
+.task-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.task-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.category {
+  font-size: 0.9rem;
+  background-color: #rgb(214, 225, 235);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
 .delete-btn {
   background: none;
   padding: 4px 6px;
