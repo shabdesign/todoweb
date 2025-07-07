@@ -88,6 +88,13 @@ body {
   gap: 12px;
 }
 
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
 .task-text {
   display: flex;
   flex-direction: column;
