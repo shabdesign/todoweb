@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     li.appendChild(spanText);
-    li.appendChild(datelabel);
+    li.appendChild(dateLabel);
     li.appendChild(deleteBtn);
 
     return li;
