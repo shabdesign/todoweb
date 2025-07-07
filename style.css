@@ -134,7 +134,14 @@ body {
     gap: 10px;
 }
 
-input, button, option {
+input, button {
+    border-radius: 16px;
+    border-width: 2px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+select {
     border-radius: 16px;
     border-width: 2px;
     padding: 5px 10px;
