@@ -24,6 +24,26 @@ document.addEventListener("DOMContentLoaded", function () {
     li.classList.add("todo-item");
     if (completed) li.classList.add("completed");
 
+    const taskTextDiv = document.createElement("div");
+    taskTextDiv.classList.add("task-text");
+
+    const spanText = document.createElement("span");
+    spanText.textContent = input.value;
+
+    const deadlineSmall = document.createElement("small");
+    deadlineSmall.classList.add("deadline");
+    deadlineSmall.textContent = deadline ? `Due: ${deadline}` : "";
+
+    taskTextDiv.appendChild(spanText);
+    taskTextDiv.appendChild(deadlineSmall);
+
+    const taskInfoDiv = document.createElement("div");
+    taskInfoDiv.classList.add("task-info");
+
+    const categorySpan = document.createElement("span");
+    categorySpan.classList.add("category");
+    categorySpan.textContent = `#${category}`;
+    
     const dateLabel = document.createElement("small");
     dateLabel.textContent = deadline ? `Due: ${deadline}` : "";
     dateLabel.classList.add("deadline");
@@ -44,15 +64,21 @@ document.addEventListener("DOMContentLoaded", function () {
       saveListToLocalStorage();
     });
 
+    taskInfoDiv.appendChild(categorySpan);
+    taskInfoDiv.appendChild(deleteBtn);
+    
     li.addEventListener("dblclick", function () {
       li.classList.toggle("completed");
       saveListToLocalStorage();
     });
 
+    li.appendChild(taskTextDiv);
+    li.appendChild(taskInfoDiv);
     li.appendChild(spanText);
     li.appendChild(dateLabel);
     li.appendChild(categoryLabel);
     li.appendChild(deleteBtn);
+    list.appendChild(li);
 
     return li;
   }
