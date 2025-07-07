@@ -28,11 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
     taskTextDiv.classList.add("task-text");
 
     const spanText = document.createElement("span");
-    spanText.textContent = input.value;
+    spanText.textContent = text;
 
     const deadlineSmall = document.createElement("small");
     deadlineSmall.classList.add("deadline");
-    deadlineSmall.textContent = deadline ? `Due: ${deadline}` : "";
+    if (deadline) {
+      deadlineSmall.textContent = `Due: ${deadline}`;
+    }
 
     taskTextDiv.appendChild(spanText);
     taskTextDiv.appendChild(deadlineSmall);
@@ -42,20 +44,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const categorySpan = document.createElement("span");
     categorySpan.classList.add("category");
-    categorySpan.textContent = `#${category}`;
-    
-    const dateLabel = document.createElement("small");
-    dateLabel.textContent = deadline ? `Due: ${deadline}` : "";
-    dateLabel.classList.add("deadline");
+    if (category) {
+      categorySpan.textContent = `#${category}`;
+    }
 
-     const categoryLabel = document.createElement("small");
-     categoryLabel.textContent = category ? `#${category}` : "";
-     categoryLabel.classList.add("category");
-  
     const deleteBtn = document.createElement("button");
     deleteBtn.innerHTML = '<i class="fas fa-trash"></i>';
     deleteBtn.classList.add("delete-btn");
-
     deleteBtn.addEventListener("click", function () {
       li.remove();
       saveListToLocalStorage();
@@ -63,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     taskInfoDiv.appendChild(categorySpan);
     taskInfoDiv.appendChild(deleteBtn);
+
     
     li.addEventListener("dblclick", function () {
       li.classList.toggle("completed");
@@ -71,11 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     li.appendChild(taskTextDiv);
     li.appendChild(taskInfoDiv);
-    li.appendChild(spanText);
-    li.appendChild(dateLabel);
-    li.appendChild(categoryLabel);
-    li.appendChild(deleteBtn);
-    list.appendChild(li);
 
     return li;
   }
