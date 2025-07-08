@@ -4,8 +4,7 @@
   border-radius: 15px;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: #a7a7a7;
-  color: #213658;
+  background-color: #D7D7D7;
   opacity: 0.8;
 }
 
@@ -21,7 +20,7 @@
 }
 
 body {
-    background-color: #536F99;
+    background-color: #E8D9C1;
     font-family: 'Poppins', Segoe UI, Tahoma, Verdana, sans-serif
 }
 
@@ -39,7 +38,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    background-color: #A1B3CF;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -60,8 +58,8 @@ body {
 }
 
 .todo-wrapper.pretty-button {
-    color: rgb(63, 81, 109);
-    background-color: rgb(214, 225, 235);
+    color: #282828;
+    background-color: #ffffff;
 }
 
 .todo-wrapper.pretty-button:hover {
@@ -100,14 +98,14 @@ form {
   justify-content: space-between;
   align-items: flex-start;
   padding: 6px 12px;
-  border-bottom: 1px solid rgb(214, 225, 235);
+  border-bottom: 1px solid #213658;
   gap: 12px;
   transition: all 0.3s ease;
 }
 
 .completed {
   text-decoration: line-through;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .form-row {
@@ -131,7 +129,7 @@ form {
 
 .category {
   font-size: 0.9rem;
-  background-color: #rgb(214, 225, 235);
+  background-color: #536F99;
   border-radius: 4px;
   padding: 2px 6px;
 }
@@ -142,7 +140,7 @@ form {
 }
 
 .delete-btn i {
-  color: rgb(56, 76, 105);
+  color: #D7D7D7;
   font-size: 14px;
 }
 
@@ -162,7 +160,7 @@ form {
     margin-bottom: auto;
     margin-right: auto;
     padding: 20px;
-    background-color: rgb(214, 225, 235);
+    background-color: #AF9872;
     opacity: 0.8;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -178,7 +176,7 @@ form {
 .backsong p {
     font-style: italic;
     margin: 5px;
-    color: rgb(63, 81, 109);
+    color: #213658;
 }
 
 @media (max-width: 768px) {
