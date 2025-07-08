@@ -4,24 +4,25 @@
   border-radius: 15px;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: rgb(240, 239, 231);
-  color: #333;
+  background-color: #a7a7a7;
+  color: #213658;
+  opacity: 0.8;
 }
 
 .page-header h1 {
   font-size: 32px;
   margin-bottom: 10px;
-  color: rgb(56, 76, 105);
+  color: #213658;
 }
 
 .page-header p {
   font-size: 16px;
-  color: #666;
+  color: #282828;
 }
 
 body {
-    background-color: rgb(98, 120, 153);
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif
+    background-color: #536F99;
+    font-family: 'Poppins', Segoe UI, Tahoma, Verdana, sans-serif
 }
 
 .main-container {
@@ -38,7 +39,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    background-color: rgb(249, 228, 188);
+    background-color: #A1B3CF;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -48,12 +49,12 @@ body {
 
 .todo-wrapper.intro-text {
     font-size: medium;
-    color: rgb(42, 56, 80);
+    color: #282828;
 }
 .todo-wrapper .hint-text {
     font-style: italic;
     font-size: small;
-    color: rgb(63, 81, 109);
+    color: #213658;
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -74,9 +75,24 @@ body {
   list-style-position: inside;
 }
 
-.completed {
-  text-decoration: line-through;
-  opacity: 0.6;
+input, button {
+    border-radius: 16px;
+    border-width: 2px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+select {
+    border-radius: 16px;
+    border-width: 2px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .todo-item {
@@ -86,6 +102,12 @@ body {
   padding: 6px 12px;
   border-bottom: 1px solid rgb(214, 225, 235);
   gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
 }
 
 .form-row {
@@ -132,31 +154,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-}
-
-input, button {
-    border-radius: 16px;
-    border-width: 2px;
-    padding: 5px 10px;
-    font-size: 12px;
-}
-
-select {
-    border-radius: 16px;
-    border-width: 2px;
-    padding: 5px 10px;
-    font-size: 12px;
-}
-
-option {
-    border-radius: 16px;
-    border-width: 2px;
-}
-
-form {
-  display: flex;
-  gap: 10px;
-  align-items: center;
 }
 
 .backsong {
