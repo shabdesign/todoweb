@@ -98,7 +98,7 @@ form {
 .todo-item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 6px 12px;
   border-bottom: 1px solid rgb(214, 225, 235);
   gap: 12px;
