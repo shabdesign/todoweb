@@ -30,7 +30,6 @@ body {
   padding: 20px;
   margin: auto;
   align-items: flex-start;
-  background-color: #E8D9C1
 }
 
 .todo-wrapper {
@@ -39,6 +38,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
+    background-color: #E8D9C1
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -161,7 +161,7 @@ form {
     margin-bottom: auto;
     margin-right: auto;
     padding: 20px;
-    background-color: #AF956C;
+    background-color: #B59B71;
     opacity: 0.8;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
