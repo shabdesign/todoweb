@@ -16,11 +16,11 @@
 
 .page-header p {
   font-size: 16px;
-  color: #282828;
+  color: #555555;
 }
 
 body {
-    background-color: #E8D9C1;
+    background-color: #536F99;
     font-family: 'Poppins', Segoe UI, Tahoma, Verdana, sans-serif
 }
 
@@ -30,6 +30,7 @@ body {
   padding: 20px;
   margin: auto;
   align-items: flex-start;
+  background-color: #E8D9C1
 }
 
 .todo-wrapper {
@@ -45,7 +46,7 @@ body {
     margin: 0;
 }
 
-.todo-wrapper.intro-text {
+.todo-wrapper .intro-text {
     font-size: medium;
     color: #282828;
 }
@@ -57,7 +58,7 @@ body {
     margin-bottom: 10px;
 }
 
-.todo-wrapper.pretty-button {
+.todo-wrapper .pretty-button {
     color: #282828;
     background-color: #ffffff;
 }
@@ -105,7 +106,7 @@ form {
 
 .completed {
   text-decoration: line-through;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .form-row {
@@ -129,7 +130,7 @@ form {
 
 .category {
   font-size: 0.9rem;
-  background-color: #536F99;
+  background-color: #A1B3CF;
   border-radius: 4px;
   padding: 2px 6px;
 }
@@ -140,7 +141,7 @@ form {
 }
 
 .delete-btn i {
-  color: #D7D7D7;
+  color: #213658;
   font-size: 14px;
 }
 
@@ -160,7 +161,7 @@ form {
     margin-bottom: auto;
     margin-right: auto;
     padding: 20px;
-    background-color: #AF9872;
+    background-color: #AF956C;
     opacity: 0.8;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -176,7 +177,7 @@ form {
 .backsong p {
     font-style: italic;
     margin: 5px;
-    color: #213658;
+    color: #46361D;
 }
 
 @media (max-width: 768px) {
