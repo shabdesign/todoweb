@@ -4,6 +4,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const list = document.getElementById("todo-list");
   const clearCompletedBtn = document.getElementById("clear-completed");
   const emptyListBtn = document.getElementById("empty-list");
+  const filterSelect = document.getElementById("filter-category");
+
+  filterSelect.addEventListener("change", function () {
+    const selectedCategory = this.value;
+    const allItems = document.querySelectorAll("#todo-list li");
+
+    allItems.forEach(item => {
+      const categorySpan = item.querySelector(".category");
+      const categoryValue = categorySpan?.textContent?.replace("#", "").toLowerCase() || "";
+
+      if (selectedCategory === "all" || categoryValue === selectedCategory) {
+        item.style.display = "";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
 
   function saveListToLocalStorage() {
     const items = [];
