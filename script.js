@@ -22,6 +22,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  const filterStatus = document.getElementById("filter-status");
+
+  filterStatus.addEventListener("change", function () {
+    const selectedStatus = this.value;
+    const allItems = document.querySelectorAll("#todo-list li");
+
+    allItems.forEach(item => {
+      const isCompleted = item.classList.contains("completed");
+
+      if (selectedStatus === "all") {
+        item.style.display = "";
+      } else if (selectedStatus === "active" && !isCompleted) {
+        item.style.display = "";
+      } else if (selectedStatus === "completed" && isCompleted) {
+        item.style.display = "";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+
   function saveListToLocalStorage() {
     const items = [];
     document.querySelectorAll("#todo-list li").forEach(li => {
