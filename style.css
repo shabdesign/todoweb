@@ -5,8 +5,7 @@
   margin-left: 20px;
   margin-right: 20px;
   background-color: #ECEDEF;
-  box-shadow: 0 0 16px rgba(255, 255, 255, 0.4);
-  opacity: 0.8;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.9);
 }
 
 .page-header h1 {
