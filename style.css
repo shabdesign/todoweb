@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2 rem;
-  padding: 2 rem;
+  gap: 2rem;
+  padding: 2rem;
   border-radius: 15px;
   margin-left: 20px;
   margin-right: 20px;
@@ -223,5 +223,11 @@ form {
 
   .backsong, .todo-wrapper {
     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-header {
+    flex-direction: column;
   }
 }
