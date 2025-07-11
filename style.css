@@ -41,11 +41,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    background-color: #E8D9C1;
+    background-color: #DCE2EA;
     box-shadow: 0 0 16px rgba(255, 255, 255, 0.9);
 }
 
 .todo-wrapper h2 {
+    color: #151935;
     margin: 0;
 }
 
@@ -126,7 +127,7 @@ form {
 
 .category {
   font-size: 0.9rem;
-  background-color: #C4A87B;
+  background-color: #B3C3D4;
   border-radius: 4px;
   padding: 2px 6px;
 }
