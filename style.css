@@ -9,7 +9,10 @@
 }
 
 .page-header h1 {
-  font-size: 32px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 64px;
   margin-bottom: 10px;
   color: #151935;
 }
