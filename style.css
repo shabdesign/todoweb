@@ -86,6 +86,10 @@ input, button, select {
     font-size: 12px;
 }
 
+.label {
+  font-size: small;
+}
+
 form {
   display: flex;
   gap: 10px;
