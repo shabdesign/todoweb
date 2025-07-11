@@ -42,7 +42,7 @@ body {
     margin-right: auto;
     padding: 20px;
     background-color: #E8D9C1;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.9);
 }
 
 .todo-wrapper h2 {
@@ -157,13 +157,14 @@ form {
     margin-bottom: auto;
     margin-right: auto;
     padding: 20px;
-    background-color: #D2C0A3;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #B3C3D4;
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.9);
 }
 
 .backsong h2 {
     margin: 0;
     margin-bottom: 25px;
+    color: #151935;
     font-size: larger;
 }
 .backsong audio {
@@ -172,7 +173,7 @@ form {
 .backsong p {
     font-style: italic;
     margin: 5px;
-    color: #46361D;
+    color: #213658;
 }
 
 @media (max-width: 768px) {
