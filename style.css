@@ -18,8 +18,9 @@
 }
 
 .page-header p {
-  font-size: 12px;
+  font-size: 16px;
   color: #000000;
+  mergin-botom: 8px;
 }
 
 body {
