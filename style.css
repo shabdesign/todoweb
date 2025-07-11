@@ -1,11 +1,34 @@
 .page-header {
-  text-align: center;
-  padding: 20px 8px 8px;
+  display: flex;
+  align-items: center;
+  justify-conntent: center;
+  gap: 2 rem;
+  padding: 2 rem;
   border-radius: 15px;
   margin-left: 20px;
   margin-right: 20px;
   background-color: #F0F0F0;
   box-shadow: 0 0 16px rgba(255, 255, 255, 0.9);
+}
+
+
+.header-img {
+  width: 80px;
+  height: auto;
+}
+
+.header-img.left {
+  left: 10px;
+  transform: rotate(-10deg);
+}
+
+.header-img.right {
+  right: 10px;
+  transform: rotate(12deg);
+}
+
+.header-content {
+  text-align: center;
 }
 
 .page-header h1 {
