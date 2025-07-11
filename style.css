@@ -1,6 +1,6 @@
 .page-header {
   text-align: center;
-  padding: 30px 10px 10px;
+  padding: 20px 8px 8px;
   border-radius: 15px;
   margin-left: 20px;
   margin-right: 20px;
@@ -20,7 +20,7 @@
 .page-header p {
   font-size: 16px;
   color: #000000;
-  mergin-botom: 8px;
+  mergin-botom: 12px;
 }
 
 body {
@@ -47,6 +47,10 @@ body {
 }
 
 .todo-wrapper h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 32px;
     color: #151935;
     margin: 0;
 }
@@ -168,10 +172,13 @@ form {
 }
 
 .backsong h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 32px;
     margin: 0;
     margin-bottom: 25px;
     color: #151935;
-    font-size: larger;
 }
 .backsong audio {
     margin-bottom: 15px;
