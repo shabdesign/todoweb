@@ -113,6 +113,8 @@ input, button, select {
     border-radius: 16px;
     border-width: 2px;
     border-color: #B3C3D4;
+    appearance: none;
+    outline: none;
     padding: 5px 10px;
     font-size: 12px;
 }
