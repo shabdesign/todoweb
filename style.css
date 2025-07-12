@@ -156,6 +156,11 @@ form {
   box-shadow: 0 0 16px rgba(255, 255, 255, 0.6);
 }
 
+.exist-list {
+  display: flex;
+  text-align: cennter;
+}
+
 .todo-filters {
   display: flex;
   flex-wrap: wrap;
