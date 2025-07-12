@@ -260,6 +260,21 @@ form {
     color: #151935;
 }
 
+.song-options {
+  margin:0;
+  margin-bottom: 24px;
+}
+
+.song-options select {
+  border-radius: 16px;
+  border-width: 2px;
+  border-color: #B4C4D5;
+  appearance: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
 .song-display {
   border-radius: 12px;
   margin-left: auto;
