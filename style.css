@@ -89,8 +89,8 @@ body {
     font-size: small;
     text-align: center;
     color: #213658;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 4px;
+    margin-bottom: 16px;
 }
 
 .todo-wrapper .pretty-button {
@@ -126,8 +126,12 @@ form {
 }
 
 #todo-form {
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .todo-item {
