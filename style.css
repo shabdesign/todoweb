@@ -95,6 +95,7 @@ body {
 
 .todo-wrapper .pretty-button {
     color: #282828;
+    background-color: #FFFFFF;
 }
 
 .todo-wrapper .pretty-button:hover {
@@ -111,6 +112,7 @@ body {
 input, button, select {
     border-radius: 16px;
     border-width: 2px;
+    border-color: #B3C3D4;
     padding: 5px 10px;
     font-size: 12px;
 }
