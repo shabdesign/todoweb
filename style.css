@@ -119,6 +119,12 @@ input, button, select {
     font-size: 12px;
 }
 
+input, button, select {
+  opacity: 0,7 ;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 .label {
   font-size: small;
 }
