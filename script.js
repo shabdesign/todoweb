@@ -31,7 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
     quote.textContent = songs[selected].quote;
 
     audioPlayer.load();
-    audioPlayer.play();
+    audioPlayer.addEventListener("canplay", function playOnceReady() {
+      audioPlayer.play();
+      audioPlayer.removeEventListener("canplay", playOnceReady);
+    });
   });
   
   const form = document.getElementById("todo-form");
