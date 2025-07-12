@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "mytreasure": {
       file: "mytreasure.mp3",
       title: "Treasure - My Treasure",
-      quote: "Weary skylight. When the sun goes to sleep. And the wind blows. It's all passing by. Like waking up from a dream. Let's be new again. It's alright, it's going to be fine."
+      quote: "After the dark dawn, The sun that was asleep will rise (Will rise). When it shines on us (Yeah), The fading happiness and the love that didn't bloom will grow back again. Never give up (My treasure). All we need is love."
     },
     "thankyou": {
       file: "thankyou.mp3",
