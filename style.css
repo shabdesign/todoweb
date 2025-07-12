@@ -80,9 +80,10 @@ body {
 
 .todo-wrapper h3 {
     font-family: "Bebas Neue", sans-serif;
-    font-weight: 160;
+    font-weight: 200;
     font-style: normal;
     font-size: 24px;
+    text-align: center;
     color: #607A96;
     margin: 0;
 }
