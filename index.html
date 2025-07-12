@@ -33,17 +33,19 @@
     <div class="main-container">
         <div class="backsong">
              <h2>🎧 Playlist</h2>
-                <h3 id="song-title">Treasure - Slowmotion</h3>
+                <label for="song-selector">Select Song:</label>
                 <select id="song-selector">
                     <option value="slowmotion">Slowmotion</option>
                     <option value="mytreasure">My Treasure</option>
                     <option value="thankyou">Thank You</option>
                 </select>
-            
+            <div class="song-display">
+                <h3 id="song-title">Treasure - Slowmotion</h3>
                 <audio controls id="audio-player">
                     <source src="../todoweb/audio/slowmotion.mp3" type="audio/mpeg" />
                 </audio>
-            <p id="song-quote">A big jump towards the front. Look at this, you can trust me. Slower, more slower, slower. We gon' make it. We gon' reach it. </p>
+                <p id="song-quote">A big jump towards the front. Look at this, you can trust me. Slower, more slower, slower. We gon' make it. We gon' reach it. </p>
+            </div>
         </div>
 
         <div class="todo-wrapper">
