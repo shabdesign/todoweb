@@ -136,6 +136,13 @@ form {
   margin-top: 2rem;
 }
 
+.todo-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
 .todo-item {
   display: flex;
   justify-content: space-between;
