@@ -82,9 +82,17 @@ body {
     font-size: medium;
     color: #282828;
 }
+
+.todo-wrapper .todo-form {
+  align-items: center;
+  justify-content: center;
+}
+
+
 .todo-wrapper .hint-text {
     font-style: italic;
     font-size: small;
+    text-align: center;
     color: #213658;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -92,7 +100,6 @@ body {
 
 .todo-wrapper .pretty-button {
     color: #282828;
-    background-color: #ffffff;
 }
 
 .todo-wrapper .pretty-button:hover {
