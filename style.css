@@ -83,11 +83,6 @@ body {
     color: #282828;
 }
 
-.todo-wrapper #todo-form {
-  align-items: center;
-  justify-content: center;
-}
-
 
 .todo-wrapper .hint-text {
     font-style: italic;
@@ -128,6 +123,11 @@ form {
   display: flex;
   gap: 10px;
   align-items: center;
+}
+
+#todo-form {
+  align-items: center;
+  justify-content: center;
 }
 
 .todo-item {
