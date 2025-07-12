@@ -44,10 +44,11 @@
         </div>
 
         <div class="todo-wrapper">
-            <h2>📋 My To Do List</h2>
+            <h2>📋 To Do List</h2>
             <p class="intro-text">Let's be productive today!</p>
-            <div class= "todo-hint">
+            <div class= "todo-input">
                 <form id="todo-form">
+                    <h3>Add New List</h3>
                     <input type="text" id="todo-input"/>
                     <input type="date" id="todo-date"/>
                     <select id="todo-category">
@@ -61,39 +62,42 @@
                     <button type="submit" id="add-button" class="pretty-button">Add</button>
                 </form>
             </div>
-            <p class="hint-text">Double click the item to make it complete</p>
-            <div class="todo-filters">
-                <label for="filter-category">Filter by category:</label>
-                <select id="filter-category">
-                    <option value="all">All</option>
-                    <option value="hobby">Hobby</option>
-                    <option value="ui-ux">UI-UX</option>
-                    <option value="web-dev">Web Dev</option>
-                    <option value="other-jobs">Other Jobs</option>
-                    <option value="personal">Personal</option>
-                </select>
-                <label for="filter-status">Filter by status:</label>
-                <select id="filter-status">
-                    <option value="all">All</option>
-                    <option value="active">On going</option>
-                    <option value="completed">Completed</option>
-                </select>
-            </div>
-            <li class="todo-item">
-                <div class="task-text">
-                    <span>Task</span>
-                    <small>Due Date</small>
+            <div class="exist-list">
+                <div class="todo-filters">
+                    <label for="filter-category">Filter by category:</label>
+                    <select id="filter-category">
+                        <option value="all">All</option>
+                        <option value="hobby">Hobby</option>
+                        <option value="ui-ux">UI-UX</option>
+                        <option value="web-dev">Web Dev</option>
+                        <option value="other-jobs">Other Jobs</option>
+                        <option value="personal">Personal</option>
+                    </select>
+                    <label for="filter-status">Filter by status:</label>
+                    <select id="filter-status">
+                        <option value="all">All</option>
+                        <option value="active">On going</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                    <br/>
+                    <p class="hint-text">Double click the item to make it complete</p>
                 </div>
-                <div class="task-info">
-                    <span class="category">Category</span>
-                    <small class="delete-btn">Delete</small>
+                <li class="todo-item">
+                    <div class="task-text">
+                        <span>Task</span>
+                        <small>Due Date</small>
+                    </div>
+                    <div class="task-info">
+                        <span class="category">Category</span>
+                        <small class="delete-btn">Delete</small>
+                    </div>
+                </li>
+                <ol id="todo-list"></ol>
+                <br/>
+                <div id="control-wrapper">
+                    <button id="clear-completed" class=""pretty-button">Clear Completed</button>
+                    <button id="empty-list" class="pretty-button">Empty List</button>
                 </div>
-            </li>
-            <ol id="todo-list"></ol>
-            <br/>
-            <div id="control-wrapper">
-                <button id="clear-completed" class=""pretty-button">Clear Completed</button>
-                <button id="empty-list" class="pretty-button">Empty List</button>
             </div>
         </div>
     </div>
