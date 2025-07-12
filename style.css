@@ -78,6 +78,15 @@ body {
     margin: 0;
 }
 
+.todo-wrapper h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 160;
+    font-style: normal;
+    font-size: 24px;
+    color: #607A96;
+    margin: 0;
+}
+
 .todo-wrapper .intro-text {
     font-size: medium;
     color: #282828;
@@ -117,6 +126,7 @@ input, button, select {
   border-radius: 12px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 24px;
   padding: 20px;
   background-color: #F4F4F4;
   box-shadow: 0 0 16px rgba(255, 255, 255, 0.6);
