@@ -149,6 +149,9 @@ form {
 }
 
 .exist-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   border-radius: 12px;
   margin-left: auto;
   margin-right: auto;
