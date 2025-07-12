@@ -83,15 +83,6 @@ body {
     color: #282828;
 }
 
-.todo-wrapper .hint-text {
-    font-style: italic;
-    font-size: small;
-    text-align: center;
-    color: #213658;
-    margin-top: 4px;
-    margin-bottom: 16px;
-}
-
 .todo-wrapper .pretty-button {
     color: #282828;
     background-color: #FFFFFF;
@@ -123,7 +114,7 @@ input, button, select {
 }
 
 .todo-input {
-  border-radius: 15px;
+  border-radius: 12px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -146,12 +137,31 @@ form {
   margin-top: 2rem;
 }
 
+.exist-list {
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: #F4F4F4;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.6);
+}
+
 .todo-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 12px;
 }
+
+.hint-text {
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+    color: #213658;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
 
 .todo-item {
   display: flex;
