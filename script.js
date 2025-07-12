@@ -1,4 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const audioPlayer = document.getElementById("audio-player");
+  const source = audioPlayer.querySelector("source");
+  const selector = document.getElementById("song-selector");
+  const quote = document.getElementById("song-quote");
+  const songTitle = document.getElementById("song-title");
+
+  const songs = {
+    "slowmotion": {
+      file: "slowmotion.mp3",
+      title: "Treasure - Slowmotion",
+      quote: "A big jump towards the front. Look at this, you can trust me. Slower, more slower, slower. We gon' make it. We gon' reach it."
+    },
+    "mytreasure": {
+      file: "mytreasure.mp3",
+      title: "Treasure - My Treasure",
+      quote: "Weary skylight. When the sun goes to sleep. And the wind blows. It's all passing by. Like waking up from a dream. Let's be new again. It's alright, it's going to be fine."
+    },
+    "thankyou": {
+      file: "thankyou.mp3",
+      title: "Asahi x Haruto - Thank You",
+      quote: "Thank you that I met you. I was so happy. You, you, you, you're with me. All the memories are shining."
+    }
+  };
+
+  selector.addEventListener("change", function () {
+    const selected = this.value;
+
+    source.src = "audio/" + songs[selected].file;
+    songTitle.textContent = songs[selected].title;
+    quote.textContent = songs[selected].quote;
+
+    audioPlayer.load();
+    audioPlayer.play();
+  });
+  
   const form = document.getElementById("todo-form");
   const input = document.getElementById("todo-input");
   const list = document.getElementById("todo-list");
