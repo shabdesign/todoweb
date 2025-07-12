@@ -83,7 +83,7 @@ body {
     color: #282828;
 }
 
-.todo-wrapper .todo-form {
+.todo-wrapper #todo-form {
   align-items: center;
   justify-content: center;
 }
