@@ -259,6 +259,26 @@ form {
     margin-bottom: 25px;
     color: #151935;
 }
+
+.song-display {
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: #DCE2EA;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.4);
+}
+
+.backsong h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #607A96;
+    margin: 0;
+}
+
 .backsong audio {
     margin-bottom: 15px;
 }
