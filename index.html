@@ -46,19 +46,21 @@
         <div class="todo-wrapper">
             <h2>📋 My To Do List</h2>
             <p class="intro-text">Let's be productive today!</p>
-            <form id="todo-form">
-                <input type="text" id="todo-input"/>
-                <input type="date" id="todo-date"/>
-                <select id="todo-category">
-                    <option value="">Select category</option>
-                    <option value="hobby">Hobby</option>
-                    <option value="ui-ux">UI-UX</option>
-                    <option value="web-dev">Web Dev</option>
-                    <option value="other-jobs">Other Jobs</option>
-                    <option value="personal">Personal</option>
-                </select>
-                <button type="submit" id="add-button" class="pretty-button">Add</button>
-            </form>
+            <div class= "form-hint">
+                <form id="todo-form">
+                    <input type="text" id="todo-input"/>
+                    <input type="date" id="todo-date"/>
+                    <select id="todo-category">
+                        <option value="">Select category</option>
+                        <option value="hobby">Hobby</option>
+                        <option value="ui-ux">UI-UX</option>
+                        <option value="web-dev">Web Dev</option>
+                        <option value="other-jobs">Other Jobs</option>
+                        <option value="personal">Personal</option>
+                    </select>
+                    <button type="submit" id="add-button" class="pretty-button">Add</button>
+                </form>
+            </div>
             <p class="hint-text">Double click the item to make it complete</p>
             <br/>
             <label for="filter-category">Filter by category:</label>
