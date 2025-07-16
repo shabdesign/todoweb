@@ -165,12 +165,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const deadline = dateInput.value;
     const categoryInput = document.getElementById("todo-category");
     const category = categoryInput.value;
+    
     if (newItemText !== "") {
       const li = createListItem(newItemText, false, deadline, category);
       list.appendChild(li);
       input.value = "";
       dateInput.value = ""; 
       saveListToLocalStorage();
+      
+      list.innerHTML = "";
+      loadListFromLocalStorage();
     }
   });
 
