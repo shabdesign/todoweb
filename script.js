@@ -149,6 +149,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function loadListFromLocalStorage() {
     const items = JSON.parse(localStorage.getItem("todoList")) || [];
+    
+    items.sort((a, b) => new Date(a.deadline) - new Date(b.deadline))
+    
     items.forEach(item => {
       const li = createListItem(item.text, item.completed, item.deadline, item.category);
       list.appendChild(li);
